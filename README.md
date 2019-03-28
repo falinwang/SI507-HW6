@@ -58,12 +58,9 @@ Below are a bunch of questions and indications of things to do. For each indicat
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
 * Like this: 
-* **Jackie Cohen (jczetta)**
-* Yea-Ree Chang (cyearee)
-* Ruchi Ookalkar (ruchido)
-* Innocent Obi (innoobi)
-* Zhen Wang (alejwang)
-* etc.
+* **Fa-Lin Wang (falinwang)**
+* 
+* 
 
 ## Questions & code instructions
 
