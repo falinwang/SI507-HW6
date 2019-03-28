@@ -120,11 +120,25 @@ The `document` represents the current HTML page we are in.
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
-
+Select and change the HTML content of <p> elements with id = items to be  the numbers of <li> elements, which is 9.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
+White, the default color.
+
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
+
+Becaue in CSS they define <p> elements to have these properties. 
+```html
+<style>
+p{
+	background-color: #b3b3b3;
+	border: 3px solid #FFFFFF;
+}
+</style>
+```
+
+To edit the background color and the color of border of these boxes, I will change the 6-digit hex color code (#b3b3b3 and #FFFFFF).
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
