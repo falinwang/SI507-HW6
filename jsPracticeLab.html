@@ -25,8 +25,12 @@
 	}
 	//When someone uses the keyboard shortcut to copy the words "University of Michigan" then add the words "Go Blue" to the final div.  Each occurence should be on a separate line. 
 	//Note that this code must be outside the other function above
-	function copyFunction(){
+	function copyFunction1(){
 		document.querySelector('#cheer').innerHTML += "Go blue!<br>"
+	}
+
+	function copyFunction2(){
+		document.querySelector('#cheer').innerHTML += "O Canada<br>"
 	}
 
 	function handleClick(){
@@ -63,9 +67,9 @@ p{
 	<ul>
 		<li>Kent State</li>
 		<li>University of Pittsburgh</li>
-		<li>McGill University</li>
+		<li oncopy="copyFunction2()">McGill University</li>
 		<li>California State University Long Beach</li>
-		<li oncopy="copyFunction()">University of Michigan</li>
+		<li oncopy="copyFunction1()">University of Michigan</li>
 	</ul>
 	<div id="cheer">
 
