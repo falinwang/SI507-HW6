@@ -76,7 +76,21 @@ Some JavaScript code
 
 * **What does a code comment look like in JavaScript? What character/s do you have to put before a comment?**
 
+`//` and `/* */`, `//` is for single line comment,  `/* */` is for multiple lines comment.
+
 * **Explain what needs to happen to get a JavaScript program to "run", given the JavaScript you've seen in this assignment.**
+
+
+The first way is to put the <script> section in HTML file between <head> tag linked to another js file, and then code in the javascript file.
+` <script src="js/script.js"></script>`
+
+Or you can insert <script> </script> in HTML file and then put JavaScript codes within the <script> tags like the example file does.
+```js
+<script type=“text/javascript>
+console.log("Hello World!")
+</script>
+```
+
 
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
