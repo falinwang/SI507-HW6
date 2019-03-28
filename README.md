@@ -57,10 +57,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this:
 * **Fa-Lin Wang (falinwang)**
-*
-*
 
 ## Questions & code instructions
 
@@ -218,9 +215,9 @@ if (<condition>) {
 And the syntax in Python is built with indents like:
 ```
 if <condition>
-		<do something>
+	<do something>
 else
-		<do something>
+	<do something>
 ```
 
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
@@ -235,7 +232,7 @@ $(document).ready(function(){
     $("form").submit(function(event){
 ```
 
-I think `$(document).ready(` means that when the document is loaded completely, then do the things in the parameter. The code here, the thing it is gonna to do is to run `function()`. And the `function()` is what is has within the brakets: `$("form").submit(function(event){`, which occurs when a form is submitted.
+I think `$(document).ready(` means that when the document is loaded completely, then do the things in the parameter, which is gonna to run `function()`. The `function()` is what is has within the brakets: `$("form").submit(function(event){`, which occurs when a form is submitted.
 
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
