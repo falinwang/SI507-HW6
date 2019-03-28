@@ -143,8 +143,8 @@ To edit the background color and the color of border of these boxes, I will chan
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
 Basically I observed what it does on "University of Michigan" and how the function does, and do the same thing with `McGill University` and `O Canada`.
-    - What `copyFunction` does is to change the content with id = cheer to be its original content and add "Go blue!). 
-    - The `oncopy` is an event that when the `<li>` content is copied, the function `copyFunction()` will be invoked.
+	* What `copyFunction` does is to change the content with id = cheer to be its original content and add "Go blue!). 
+	* The `oncopy` is an event that when the `<li>` content is copied, the function `copyFunction()` will be invoked.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
