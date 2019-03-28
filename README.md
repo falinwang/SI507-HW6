@@ -142,6 +142,10 @@ To edit the background color and the color of border of these boxes, I will chan
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
+Basically I observed what it does on "University of Michigan" and how the function does, and do the same thing with `McGill University` and `O Canada`.
+  - What `copyFunction` does is to change the content with id = cheer to be its original content and add "Go blue!). 
+  - The `oncopy` is an event that when the `<li>` content is copied, the function `copyFunction()` will be invoked.
+
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
 ```js
@@ -155,6 +159,9 @@ function handleClick(){
 <button onclick=handleClick() id="wow-button">Wow</button>
 ```
 
+The function `handleClick` is to pop up a alert text box with content "hello".
+
+`onclick=handleClick()` is an event that when you click the element, the designated function, which is `handleClick`, will be invoked.
 
 
 * **Knowing what you learned from the previous question, add code/markup to the `jsPracticeLab.html` file *so that* there is a button with the text `Spring Equinox 2019` on it somewhere on the page, and when that button is clicked, a text box containing the text `March 20, 2019` appears. (There's no function -- that I am aware of -- to automatically get this info, you've got to type it yourself.)**
