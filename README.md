@@ -120,7 +120,7 @@ The `document` represents the current HTML page we are in.
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
-Select and change the HTML content of <p> elements with id = items to be  the numbers of <li> elements, which is 9.
+Select and change the HTML content of `<p>` elements with id = items to be  the numbers of `<li>` elements, which is 9.
 
 * **What color would the background of this page be <u>if there were no JavaScript in this page</u>?**
 
