@@ -25,7 +25,7 @@ This experience is *not in any way* about becoming an expert JavaScript programm
 
 ### Specifically
 
-Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give. 
+Below are a bunch of questions and indications of things to do. For each indication of something to do with code, there is also an accompanying question to answer or brief explanation to give.
 
 **To complete and submit this assignment, you should:**
 
@@ -46,7 +46,7 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 * In answering questions, assume all of the questions include a *explain briefly* note -- you do NOT have to, and should not, write extended paragraphs. Be as concise as you can and explain in your own words. Don't worry about "whether it's enough" -- just worry about conveying your understanding so you can read it later, or even give it to someone else, and the answers will help/make sense.
 
-* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours. 
+* It is not acceptable to copy and paste answers from the internet and submit them as your own. If you cite things, make sure you provide a citation, including to links. If you get information from a resource and rephrase it so you're basically explaining an idea, that's just fine for an explanatory purpose in this assignment, but you *must* cite any quotes or examples that aren't yours.
 
 * **For grading:** we are grading on...
 	* Following the instructions
@@ -57,10 +57,10 @@ Below are a bunch of questions and indications of things to do. For each indicat
 
 ### Names of people you have worked with on this assignment
 * List everyone's names and uniqnames who have worked on this assignment with you, **including your own name, but make sure YOUR name is first and bold**
-* Like this: 
+* Like this:
 * **Fa-Lin Wang (falinwang)**
-* 
-* 
+*
+*
 
 ## Questions & code instructions
 
@@ -116,7 +116,7 @@ I find the line 17 and replace `A name` with `Fa-Lin Wang`.
 The `document` represents the current HTML page we are in.
 
 
-* **What is happening in line 12 ( 
+* **What is happening in line 12 (
 		`document.querySelector('#items').innerHTML = document.getElementsByTagName('li').length`
 )? Explain, briefly (<= 2 sentences).**
 
@@ -128,7 +128,7 @@ White, the default color.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-Becaue in CSS they define `<p>` elements to have these properties. 
+Becaue in CSS they define `<p>` elements to have these properties.
 ```html
 <style>
 p{
@@ -143,7 +143,7 @@ To edit the background color and the color of border of these boxes, I will chan
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
 Basically I observed what it does on "University of Michigan" and how the function does, and do the same thing with `McGill University` and `O Canada`.
-	* What `copyFunction` does is to change the content with id = cheer to be its original content and add "Go blue!). 
+	* What `copyFunction` does is to change the content with id = cheer to be its original content and add "Go blue!).
 	* The `oncopy` is an event that when the `<li>` content is copied, the function `copyFunction()` will be invoked.
 
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
@@ -185,11 +185,48 @@ function clickFunction(){
 
 * **When you enter input that isn't valid, you see an error that is red. Why is the error in red? Why is the response for valid inputs blue?**
 
+When the input is invalid, the content will show `<p class="error">Not valid!</p>`, and the class `error` has the property that color is red. When the input is valid, the class of the message is `good` and its color is blue.
+
+```html
+<style type="text/css">
+    .error{
+        color: red;
+    }
+    .good {
+        color: blue;
+    }
+</style>
+```
+
 * **What is this line `var regex = /^[a-zA-Z]+$/;` helping with? And if you googled something to figure that out, what did you google, and what, briefly, did you learn? (If you didn't need to google, you can leave that out, but explain briefly what that line is helping the program do, anyway.)**
+
+"regex" means "Regular Expression" and it can help to validate the input in a specific format. "/^[a-zA-Z]+$/" means the character that is a-z or A-Z.
+
+I browsed a question on StackOverflow: https://stackoverflow.com/questions/3532053/regular-expression-for-only-characters-a-z-a-z and then google what is 'regular expression'. And then I read an article that lists a useful reference for the regular expression: http://larry850806.github.io/2016/06/23/regex/
 
 * **What's different about the syntax of conditional statements in JavaScript, compared to Python?**
 
+The syntax of conditional statement in JavaScript requires correct brackets and parentheses like:
+```
+if (<condition>) {
+	do something
+} else {
+	do something
+}
+```
+
+And the syntax in Python is built with indents like:
+```
+if <condition>
+		<do something>
+else
+		<do something>
+```
+
 * **What do you think the `10000` refers to in the code `.fadeOut(10000)`?**
+
+I checked the w3schools and it said that the parameter could be speed, easing or callback. https://www.w3schools.com/jquery/eff_fadeout.asp
+I think `10000` specifies the speed of the fading effect and it means it takes 10000 milliseconds to finish the fading effect.
 
 * **What do you think is going on with the following code at the beginning of the program? Note that the most important thing to do for answering this question is to be thoughtful and clear, not to be absolutely correct:**
 
@@ -198,6 +235,24 @@ $(document).ready(function(){
     $("form").submit(function(event){
 ```
 
+I think `$(document).ready(` means that when the document is loaded completely, then do the things in the parameter. The code here, the thing it is gonna to do is to run `function()`. And the `function()` is what is has within the brakets: `$("form").submit(function(event){`, which occurs when a form is submitted.
+
 
 * **Add some code to the `jquerylib_submit_example.html` file so that, if the input is valid and is specifically the text `hello`, rather than the visible output being `Nice!` in blue, the visible output should be `Hello to you too!`, also in blue, just like `Nice!` is.**
 	* *HINT:* You'll have to make some changes to the conditional statement, and possibly look up some JavaScript conditional syntax. You'll also need to look carefully at what generates visible output right now.
+
+```js
+if(regex.test(currentValue) == false){
+            $("#result").html('<p class="error">Not valid!</p>').show().fadeOut(10000);
+            // Preventing form submission
+            event.preventDefault();
+        } else {
+            // New request
+            if (currentValue === 'hello') {
+                $("#result").html('<p class="good">Hello to you too!</p>').show().fadeOut(10000);
+            } else {
+                $("#result").html('<p class="good">Nice!</p>').show().fadeOut(10000);
+            }
+            
+        }
+```
